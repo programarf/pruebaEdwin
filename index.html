@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>prueba</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cycle.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="contenedor">
+	<header>
+		<h1 class="titulo">Prueba</h1>
+	</header>
+	<ul class="mi-menu">
+	  <li><a href="URL_enlace_1"> texto_enlace_1 </a></li>
+	  <li>
+	    <a href="#"> texto_enlace_2 </a>
+	    <ul>
+	      <li><a href="URL_enlace_2.1"> submenú_2.1 </a></li>
+	      <li><a href="URL_enlace_2.2"> submenú_2.2 </a></li>
+	      <li><a href="URL_enlace_2.3"> submenú_2.3 </a></li>
+	    </ul>
+	  </li>
+	  <li><a href="URL_enlace_3"> texto_enlace_3 </a></li>
+</ul>
+	<section>
+		<article class="item2">
+				<div class="slideshow">
+					<img src="images/foto1.jpg" alt="">
+					<img src="images/foto2.jpg" alt="">
+					<img src="images/foto3.jpg" alt="">
+					<img src="images/foto4.jpg" alt="">
+				</div>
+		</article>
+	</section>
+
+	<footer>
+		<a href="https://www.facebook.com/">facebook</a>
+		<a href="http://jquery.com/">jquery</a>
+	</footer>
+	<script type="text/javascript" charset="utf-8">
+			
+			$(document).ready(function(){
+			  	$('.slideshow').cycle({
+
+			  		  fx:     'shuffle', 
+     
+    delay:  -4000
+    			  	});
+			});
+		</script>
+</div>	
+</body>
+</html>
